@@ -1,0 +1,113 @@
+.shippingContainer{
+    width:100vw;
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.shippingBox{
+    height: 90vh;
+    width: 25vw;
+    background-color: white;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+.shippingHeading{
+    text-align: center;
+    color:rgba(0,0,0,0.664);
+    font:400 1.3vmax "Roboto";
+    width:50%;
+    margin: auto;
+    border-bottom: 1px solid rgba(0,0,0,0.205);
+    padding: 1.3vmax;
+}
+.shippingForm{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 80%;
+    transition: all 0.5s;
+    align-items: center;
+    margin: auto;
+    padding: 2vmax;
+    transition: all 0.5s;
+}
+
+.shippingForm>div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.shippingForm>div>input,
+.shippingForm>div>select
+{
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    box-sizing: border-box;
+    border:1px solid rgba(0,0,0,0.267);
+    border-radius: 4px;
+    font: 300 0.9vmax cursive;
+    outline: none;
+
+}
+
+.shippingForm>div>svg{
+    position: absolute;
+    font-size: 1.6vmax;
+    color:rgba(0,0,0,0.623);
+    transform: translateX(1vmax); 
+}
+
+.shippingBtn{
+    border:none;
+    background-color: tomato;
+    color: white;
+    font:300 1vmax "Roboto";
+    width: 100%;
+    padding:1vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+    margin: 2vmax;
+}
+.shippingBtn:hover{
+    background-color: rgb(179,66,46);
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .shippingBox {
+    width: 100vw;
+    height: 95vh;
+  }
+
+  .shippingHeading {
+    font: 400 6vw "Roboto";
+    padding: 5vw;
+  }
+
+  .shippingForm {
+    padding: 11vw;
+  }
+
+  .shippingForm > div > input,
+  .shippingForm > div > select {
+    padding: 5vw 10vw;
+    font: 300 4vw cursive;
+  }
+
+  .shippingForm > div > svg {
+    font-size: 6vw;
+    transform: translateX(3vw);
+  }
+
+  .shippingBtn {
+    font: 300 4vw "Roboto";
+    padding: 4vw;
+  }
+}
