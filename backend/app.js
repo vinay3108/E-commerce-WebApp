@@ -10,6 +10,7 @@ const dotenv = require( 'dotenv' );
 
 //Config
 dotenv.config( { path: "backend/config/config.env" } );
+
 app.use(express.json());
 app.use( cookieParser() );
 
